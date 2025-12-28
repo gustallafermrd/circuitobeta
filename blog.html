@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Blog del Circuito de la Excelencia</title>
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Theme Configuration -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#181834",
+            "secondary": "#c9a446",
+            "background-light": "#f6f6f7",
+            "background-dark": "#15151d",
+            "surface-light": "#ffffff",
+            "surface-dark": "#1e1e2d",
+            "text-main": "#131316",
+            "text-muted": "#6d6d7e",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main antialiased overflow-x-hidden">
+  <div class="flex min-h-screen flex-col">
+    <header
+      class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+      <div class="flex items-center justify-between px-6 py-4 lg:px-20 max-w-[1400px] mx-auto">
+        <div class="flex items-center gap-4">
+          <div class="size-16">
+            <img src="img/logo-circuito.webp" alt="Logo" class="w-full h-full object-contain">
+          </div>
+          <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Circuito de la
+            Excelencia</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-9">
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/posadas.html">Posadas</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/about.html">Nosotros</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/blog.html">Blog</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="md:hidden text-text-main dark:text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Page Heading & Intro -->
+      <section class="bg-primary pt-16 pb-24 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <span
+            class="mb-4 inline-block rounded-full bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary backdrop-blur-sm border border-secondary/30">
+            Descubre Venezuela
+          </span>
+          <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+            Blog del Circuito
+          </h2>
+          <p class="mx-auto max-w-2xl text-lg text-gray-300">
+            Sumérgete en historias, guías de viaje y experiencias únicas en nuestras posadas de excelencia. Un recorrido
+            por lo mejor de nuestra tierra.
+          </p>
+        </div>
+      </section>
+      <!-- Featured Article Section (Overlapping) -->
+      <section class="relative z-10 -mt-16 pb-12">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="rounded-2xl bg-surface-light dark:bg-surface-dark shadow-xl overflow-hidden grid lg:grid-cols-2 group border border-gray-100 dark:border-gray-800">
+            <div class="relative h-64 lg:h-auto overflow-hidden">
+              <div
+                class="absolute top-4 left-4 z-10 bg-secondary text-primary px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider shadow-sm">
+                Destacado</div>
+              <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Beautiful sunset over Venezuelan mountains with colonial houses"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXh9oB_cYYF8a_ChevSUKeROFdMtM2PcY3SWodZBJ3DwZOnZTtQ6U9IC5HqpoCPYbYLhNesEKu6esa0m2rwc3GWjj_R4Ex3SzE_KpwmfjPz8EFgIX-GodvUCeTx81ZFsiKH-YQmC6O3LQrGhKcgUEyFHL8JRXyy1xsUOcU3Bl1eO3qUi6FFIo8L-9AbMHgKcEzxx0wS8tOlHv0QLZH0ZuKYGQrk9k-4tzTGyuW8FKW0lhfsgr-0Nj2D3-ON-sD0Jd_itU1oWDUQ9Y');">
+              </div>
+            </div>
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+              <div class="flex items-center gap-2 mb-4 text-sm text-text-muted dark:text-gray-400">
+                <span class="material-symbols-outlined text-lg">calendar_today</span>
+                <span>15 de Octubre, 2023</span>
+              </div>
+              <h3 class="text-3xl font-bold text-primary dark:text-white mb-4 leading-tight">
+                La Magia de los Andes: Un recorrido por las posadas de altura
+              </h3>
+              <p class="text-text-muted dark:text-gray-300 mb-6 text-lg leading-relaxed">
+                Descubre la calidez de los páramos merideños, donde el frío de la montaña se contrasta con la
+                hospitalidad de nuestra gente y el confort de espacios diseñados para el descanso absoluto.
+              </p>
+              <div>
+                <a class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-primary/30"
+                  href="/articulo.html">
+                  Leer artículo completo
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Main Layout: Sidebar & Content -->
+      <section class="py-12 bg-background-light dark:bg-background-dark">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Main Column: Article Grid -->
+            <div class="flex-1 w-full">
+              <!-- Categories Chips -->
+              <div class="flex flex-wrap gap-2 mb-8 border-b border-gray-200 dark:border-gray-700 pb-6">
+                <button class="px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium shadow-md">Todos</button>
+                <button
+                  class="px-4 py-2 rounded-lg bg-white dark:bg-surface-dark text-text-muted hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-colors text-sm font-medium">Turismo</button>
+                <button
+                  class="px-4 py-2 rounded-lg bg-white dark:bg-surface-dark text-text-muted hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-colors text-sm font-medium">Gastronomía</button>
+                <button
+                  class="px-4 py-2 rounded-lg bg-white dark:bg-surface-dark text-text-muted hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-colors text-sm font-medium">Posadas</button>
+                <button
+                  class="px-4 py-2 rounded-lg bg-white dark:bg-surface-dark text-text-muted hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-colors text-sm font-medium">Eventos</button>
+              </div>
+              <!-- Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <article
+                  class="flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-800 group">
+                  <div class="h-56 overflow-hidden relative">
+                    <div
+                      class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-primary dark:text-secondary uppercase">
+                      Gastronomía</div>
+                    <div
+                      class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                      data-alt="Traditional Venezuelan arepas and cheese on a rustic table"
+                      style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqX7--rZiTqUZFmJvvxO18r7SFcJ73rPdov629BV6JSiCr1V1SVxEqr24A5VbBZXpaqTSFEbxkxV4tlPt7HnHLOj6ZNyPj311Ex4S3ST__97pD6Uc0zra12y2ARv-9YQMAfFygP4YrZcC-F3fbCvNDtqA0gQtjylBpYejEz5o6o3zunuRvFQQqUObWee5Dk7KmZhSGitXkHVwNFSmPTc8M5dxMUUuBgpS2kzutsVW9gFmE4D8ZAqRa4YiT2-gT69r5qQDM3qkNmbA');">
+                    </div>
+                  </div>
+                  <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-3 text-xs font-medium text-secondary uppercase tracking-wide">Hace 2 días</div>
+                    <h3
+                      class="text-xl font-bold text-text-main dark:text-white mb-3 line-clamp-2 group-hover:text-primary dark:group-hover:text-secondary transition-colors">
+                      Sabores de la Costa: La ruta del cacao venezolano
+                    </h3>
+                    <p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4 flex-grow">
+                      Venezuela posee uno de los mejores cacaos del mundo. Te llevamos a conocer las haciendas que
+                      transforman este fruto en una experiencia inolvidable para tu paladar.
+                    </p>
+                    <a class="inline-flex items-center text-secondary font-semibold text-sm hover:underline" href="#">
+                      Leer más <span class="material-symbols-outlined text-base ml-1">arrow_right_alt</span>
+                    </a>
+                  </div>
+                </article>
+                <!-- Card 2 -->
+                <article
+                  class="flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-800 group">
+                  <div class="h-56 overflow-hidden relative">
+                    <div
+                      class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-primary dark:text-secondary uppercase">
+                      Posadas</div>
+                    <div
+                      class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                      data-alt="Luxurious pool area in a tropical inn surrounded by palm trees"
+                      style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPxH6HPDqm9NF4JQR_G1VFpKkv4VnPrz9dLyMxwHnk26YZqhvaVlpj1TWQU8KrriiSjyXZvpyXRZi9cxVJe_JBvgLqZjYSdVoplYQVwlW8y9pIsPWqonIWQ9zGMc0KPY0ivkpfON7mPkIhUWPHgieGL-jDzF_Vl7YK1UUzgRF3CHaXB5tRf3imch1q5DfTsuM1WD3xV0b4oAlY-6S7pfRGgv92Rxcr6zozz71Ly1sYQTfyRHC72m51SN2Xubf21Hzn0gpib6JBKHU');">
+                    </div>
+                  </div>
+                  <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-3 text-xs font-medium text-secondary uppercase tracking-wide">10 de Octubre, 2023
+                    </div>
+                    <h3
+                      class="text-xl font-bold text-text-main dark:text-white mb-3 line-clamp-2 group-hover:text-primary dark:group-hover:text-secondary transition-colors">
+                      5 Posadas románticas para una escapada de fin de semana
+                    </h3>
+                    <p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4 flex-grow">
+                      ¿Buscas el lugar perfecto para sorprender a tu pareja? Hemos seleccionado las estancias más
+                      íntimas y encantadoras del circuito.
+                    </p>
+                    <a class="inline-flex items-center text-secondary font-semibold text-sm hover:underline" href="#">
+                      Leer más <span class="material-symbols-outlined text-base ml-1">arrow_right_alt</span>
+                    </a>
+                  </div>
+                </article>
+                <!-- Card 3 -->
+                <article
+                  class="flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-800 group">
+                  <div class="h-56 overflow-hidden relative">
+                    <div
+                      class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-primary dark:text-secondary uppercase">
+                      Turismo</div>
+                    <div
+                      class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                      data-alt="Hiker looking at a waterfall in Gran Sabana Venezuela"
+                      style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPfIP9AhZz6xG3KrpUR2vPNaE5EnfFsPQiH5rFr119oojORCcR9ZraNwCztc1UGWbO1a5Ym-cGhA86IUIk76OZkFvdp2z2QEWmAZnJog3sEhsf9j9HyNf0yplSLqgrnnnxbd3A--l51HQ_ue-x26536zw3e79iE5PzHWXZvs7XA54mLCHoi5J2D2H6Kmoyd93SNjHpJo3jCoJEmeOzHwf4QGzJ5JkGaTXFXIq_mvloxXrc8MFvk21YehmHd87fEUwnv7Qj_BSSLK0');">
+                    </div>
+                  </div>
+                  <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-3 text-xs font-medium text-secondary uppercase tracking-wide">05 de Octubre, 2023
+                    </div>
+                    <h3
+                      class="text-xl font-bold text-text-main dark:text-white mb-3 line-clamp-2 group-hover:text-primary dark:group-hover:text-secondary transition-colors">
+                      Aventura en la Gran Sabana: Guía para principiantes
+                    </h3>
+                    <p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4 flex-grow">
+                      Todo lo que necesitas saber antes de emprender viaje hacia una de las maravillas naturales más
+                      impresionantes del planeta.
+                    </p>
+                    <a class="inline-flex items-center text-secondary font-semibold text-sm hover:underline" href="#">
+                      Leer más <span class="material-symbols-outlined text-base ml-1">arrow_right_alt</span>
+                    </a>
+                  </div>
+                </article>
+                <!-- Card 4 -->
+                <article
+                  class="flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-800 group">
+                  <div class="h-56 overflow-hidden relative">
+                    <div
+                      class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-primary dark:text-secondary uppercase">
+                      Eventos</div>
+                    <div
+                      class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                      data-alt="Folkloric dancers in traditional colorful dresses"
+                      style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJfWlmT7l9uTAvBXIStOo5RwmiRAgAxlKhQJB-l43yH0WBzvaLVs5BMHhT4r0cTfFYIbECp_cKPjILI5iIyxqU4jGBs1zTcJ-g-io_P2iNNrO-TkhXPyZgr7L7AGkL13lMqn_uAZiDgoKYiZf4duSsKJz5vVSuLWvBBaPbvkHffV_yLD_RtR2cI1l1jD62hspLduNTJQIFfv966VNJQqwepihoNLiVleINiU7LvAADh5-JSgtqkSmEQTSv7__BvMg4s4xQNnokx7Y');">
+                    </div>
+                  </div>
+                  <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-3 text-xs font-medium text-secondary uppercase tracking-wide">28 de Septiembre, 2023
+                    </div>
+                    <h3
+                      class="text-xl font-bold text-text-main dark:text-white mb-3 line-clamp-2 group-hover:text-primary dark:group-hover:text-secondary transition-colors">
+                      Feria de las Flores en Lara: Un espectáculo de color
+                    </h3>
+                    <p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4 flex-grow">
+                      No te pierdas este evento anual que reúne a los mejores floricultores de la región. Música,
+                      gastronomía y tradición.
+                    </p>
+                    <a class="inline-flex items-center text-secondary font-semibold text-sm hover:underline" href="#">
+                      Leer más <span class="material-symbols-outlined text-base ml-1">arrow_right_alt</span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <!-- Pagination -->
+              <div class="mt-12 flex justify-center items-center gap-4">
+                <button
+                  class="flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-text-muted hover:bg-white hover:text-primary transition-colors disabled:opacity-50"
+                  disabled="">
+                  <span class="material-symbols-outlined text-lg">arrow_back</span>
+                  Anterior
+                </button>
+                <div class="flex gap-2">
+                  <button
+                    class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-medium">1</button>
+                  <button
+                    class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 dark:border-gray-700 text-text-muted hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">2</button>
+                  <button
+                    class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 dark:border-gray-700 text-text-muted hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">3</button>
+                </div>
+                <button
+                  class="flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-text-muted hover:bg-white hover:text-primary transition-colors">
+                  Siguiente
+                  <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="w-full lg:w-80 flex-shrink-0 space-y-8">
+              <!-- Search Widget (Mobile duplicate / Widget style) -->
+              <div
+                class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+                <h3 class="text-lg font-bold text-primary dark:text-white mb-4">Buscar en el blog</h3>
+                <div
+                  class="flex items-center w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-900 overflow-hidden focus-within:ring-2 focus-within:ring-secondary">
+                  <input
+                    class="w-full border-none bg-transparent px-4 py-2 text-sm focus:ring-0 dark:text-white placeholder:text-gray-500"
+                    placeholder="¿Qué buscas?" type="text" />
+                  <button class="p-2 text-primary dark:text-secondary hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <span class="material-symbols-outlined">search</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Categories Widget 
+              <div
+                class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+                <h3 class="text-lg font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                  Categorías
+                  <span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
+                </h3>
+                <ul class="space-y-3">
+                  <li>
+                    <a class="flex justify-between items-center group text-text-muted hover:text-secondary transition-colors"
+                      href="#">
+                      <span>Destinos Nacionales</span>
+                      <span
+                        class="bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs px-2 py-1 rounded-full group-hover:bg-secondary group-hover:text-white transition-colors">12</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex justify-between items-center group text-text-muted hover:text-secondary transition-colors"
+                      href="#">
+                      <span>Posadas de Lujo</span>
+                      <span
+                        class="bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs px-2 py-1 rounded-full group-hover:bg-secondary group-hover:text-white transition-colors">8</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex justify-between items-center group text-text-muted hover:text-secondary transition-colors"
+                      href="#">
+                      <span>Gastronomía</span>
+                      <span
+                        class="bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs px-2 py-1 rounded-full group-hover:bg-secondary group-hover:text-white transition-colors">15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex justify-between items-center group text-text-muted hover:text-secondary transition-colors"
+                      href="#">
+                      <span>Tips de Viaje</span>
+                      <span
+                        class="bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs px-2 py-1 rounded-full group-hover:bg-secondary group-hover:text-white transition-colors">5</span>
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+              <!-- Newsletter Widget -->
+              <div class="bg-primary p-6 rounded-xl text-white shadow-lg relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary rounded-full opacity-20 blur-2xl"></div>
+                <h3 class="text-xl font-bold mb-2 relative z-10">Únete al Circuito</h3>
+                <p class="text-sm text-gray-300 mb-4 relative z-10">Recibe las mejores ofertas y nuevos artículos
+                  directamente en tu correo.</p>
+                <form class="flex flex-col gap-3 relative z-10">
+                  <input
+                    class="rounded-lg border-none bg-white/10 px-4 py-2.5 text-sm text-white placeholder:text-gray-400 focus:ring-2 focus:ring-secondary"
+                    placeholder="Tu correo electrónico" type="email" />
+                  <button
+                    class="rounded-lg bg-secondary py-2.5 text-sm font-bold text-primary hover:bg-white transition-colors shadow-md"
+                    type="submit">
+                    Suscribirse
+                  </button>
+                </form>
+              </div>
+              <!-- Social Proof / Mini Gallery -->
+              <div
+                class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+                <h3 class="text-lg font-bold text-primary dark:text-white mb-4">Síguenos en Instagram</h3>
+                <div class="grid grid-cols-3 gap-2">
+                  <div
+                    class="aspect-square rounded-md bg-gray-200 bg-cover bg-center cursor-pointer hover:opacity-80 transition-opacity"
+                    data-alt="Instagram post grid item"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBd8bH6qEwR-JpOZENopgJr1hO-dV0gHC_SDFfmE4cFPO1DuU9cy9Qk4fQBMeRlQeiMR-6mI0FOJIDA8i2joiqwcOQnwJRcl-2WjDxu59gcTtc8GRiOExHNR5tXqLNLGVwxDFgpVTkt6RYsUwXXqoBVzupeVKhrOECBoMcVRqmXVkfhgdE0XPcJAuy3pnbayYUmNEBh64uNDi1-TerLztJQcLtvkU3gux-jY76nqX9T2tqcKt-wE3xCi8guIMdsnkzLaO0_jch3cM');">
+                  </div>
+                  <div
+                    class="aspect-square rounded-md bg-gray-200 bg-cover bg-center cursor-pointer hover:opacity-80 transition-opacity"
+                    data-alt="Instagram post grid item"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASB_crTTqJ8TFIm_bGm3cJO12vpetoJ4sNSEI8oJEcTH_xd3kbXCz8Ih9tNZcf6KNei655-plSX1wwSdzpRw55oPXNpsCqNrpghBXJ7iIjaCIs6EAc-wRsHRaV7aQt7x5DDF-3-Qw70r6Y5uGJeHw2eNYSFHrpMJY5Nhs_Einx4baIf-d0azkNEnT0ltgXPMjjBrHzy9K-WYpT3UW2vLrZAJVARUCEbVjvmJ70VDKErAH4hv8uzxMQsD5IPalzeK5DFarYj5Ux8dA');">
+                  </div>
+                  <div
+                    class="aspect-square rounded-md bg-gray-200 bg-cover bg-center cursor-pointer hover:opacity-80 transition-opacity"
+                    data-alt="Instagram post grid item"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHlMtnYdQVTAU0fAiNtbuf2jR2-7SWBUfR1jQ6Z64BXWfGGrw8Yefhp1bzPj0jf78cmbeHyOL3jMZSVm0s-luRCyS7Qf2kFQ6d247lpTgJppou1lKV8fWVyXOe-fwz0lwhd6jhhlk624KawPT3HvXFt0ooHfDb92sn12WSjp9Bk83GEX0BQF7ClGx6ioMxBnHfQTp_spSFm0ICMPlltQQxfJXyzGugJiLqC-ERSJU5HqDM2reVJKHrTW5EzgmXsuyH5FuJgbDPCW0');">
+                  </div>
+                  <div
+                    class="aspect-square rounded-md bg-gray-200 bg-cover bg-center cursor-pointer hover:opacity-80 transition-opacity"
+                    data-alt="Instagram post grid item"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1x7BOwZwQ_HIwNqxgSbHhIrjBpRgpfuPoyeRH-URdfDOOik9eSEjqJhVmisU51HL1k8kLPSCozoX46Ncm6N0QRKGL3xEPs9eSRSTW0wZKO2oebuBr2JP7_aQpg-iR1q_-xYZYnqehKS25dqQ72s0J3TGvEREFf5GA389quF0NbhCIK4hew45XvaBSnlHBbGyUDn6VLrecYjDzqWxKKEJQBuIPRi69fF-KEE6hVGTDim4Y4fo53LhSao3FrkaYlX00E6LOPnUCWnI');">
+                  </div>
+                  <div
+                    class="aspect-square rounded-md bg-gray-200 bg-cover bg-center cursor-pointer hover:opacity-80 transition-opacity"
+                    data-alt="Instagram post grid item"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgrmK2yn0tSTa3X7jDZ5-jtNLrkHVbQUOkbeH_ltORz_1pxMQJbmR5KC_R-hiurkxErYuLRobdRrM48nNOdyNyXvptQpUFVxKflgbX-KwdI5UIygyNOmBi3gTO7ttIEQX9kBljSfNlVtyoKx9O9HgWk6eWD7-3vpPNI1401yY4OvVVf98o7flRQGVl3qdLqaRaabu-ZRc0ew6nZ4W9hKQkBEJ0PYWpNi8G4440v6SWMHnK_XYhzH6pC32ffZfaUEid3QIgKO-MlbM');">
+                  </div>
+                  <div
+                    class="aspect-square rounded-md bg-gray-200 bg-cover bg-center cursor-pointer hover:opacity-80 transition-opacity"
+                    data-alt="Instagram post grid item"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJOyR1PvUd5er6T28EAJ-_X4Wfz71VhXVMIioU3A4YGErbIpc9wcJsjrUW7N_WjDSLgRYUdv_BA_kfj_czcc5kdHXlVT4aASoiempP1WzTzIA2chn0Mtqw2nhyj6ZoM699wZj6nSY9IEWPbR0ucxbik1foEwNEd-adh00PPmz2pgnYocoG91MGFmKCrQKwVA8kSyph2FrCOUYgropHiS4Btp-ixLFrBZDqBNqFS8IJhLnPtamFU3kb0sFNs0lT6D9_gWqPz2hrfP0');">
+                  </div>
+                </div>
+                <a class="mt-4 block text-center text-sm font-medium text-secondary hover:text-primary transition-colors"
+                  href="#">@circuitoexcelencia</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-8 border-t border-white/10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <!-- Brand -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-primary">
+                <span class="material-symbols-outlined text-xl">diamond</span>
+              </div>
+              <span class="text-xl font-bold">Circuito de la Excelencia</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Promovemos el turismo de calidad en Venezuela, conectando a los viajeros con las posadas más exclusivas y
+              auténticas del país.
+            </p>
+            <div class="flex gap-4 mt-2">
+              <a class="text-gray-400 hover:text-secondary transition-colors" href="#"><span
+                  class="sr-only">Facebook</span>FB</a>
+              <a class="text-gray-400 hover:text-secondary transition-colors" href="#"><span
+                  class="sr-only">Instagram</span>IG</a>
+              <a class="text-gray-400 hover:text-secondary transition-colors" href="#"><span
+                  class="sr-only">Twitter</span>TW</a>
+            </div>
+          </div>
+          <!-- Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-secondary">Navegación</h4>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li><a class="hover:text-white transition-colors" href="#">Inicio</a></li>
+              <li><a class="hover:text-white transition-colors" href="#">Posadas</a></li>
+              <li><a class="hover:text-white transition-colors" href="#">Destinos</a></li>
+              <li><a class="hover:text-white transition-colors" href="#">Blog</a></li>
+              <li><a class="hover:text-white transition-colors" href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-secondary">Contacto</h4>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-lg mt-0.5">location_on</span>
+                <span>Caracas, Venezuela</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-lg mt-0.5">call</span>
+                <span>+58 212 123 4567</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-lg mt-0.5">mail</span>
+                <span>info@circuitoexcelencia.com</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Legal -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-secondary">Legal</h4>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li><a class="hover:text-white transition-colors" href="#">Términos y Condiciones</a></li>
+              <li><a class="hover:text-white transition-colors" href="#">Política de Privacidad</a></li>
+              <li><a class="hover:text-white transition-colors" href="#">Política de Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+          <p>© 2023 Circuito de la Excelencia. Todos los derechos reservados.</p>
+          <p class="flex items-center gap-1">Diseñado con <span
+              class="material-symbols-outlined text-secondary text-sm">favorite</span> en Venezuela</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

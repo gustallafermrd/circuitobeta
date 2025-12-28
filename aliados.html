@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Nuestros Socios - Circuito de la Excelencia</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13ec5b",
+            "background-light": "#f6f8f6",
+            "background-dark": "#102216",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111813] dark:text-white antialiased">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <header
+      class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+      <div class="flex items-center justify-between px-6 py-4 lg:px-20 max-w-[1400px] mx-auto">
+        <div class="flex items-center gap-4">
+          <div class="size-16">
+            <img src="img/logo-circuito.webp" alt="Logo" class="w-full h-full object-contain">
+          </div>
+          <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Circuito de la
+            Excelencia</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-9">
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/posadas.html">Posadas</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/about.html">Nosotros</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/blog.html">Blog</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="md:hidden text-text-main dark:text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+
+      <section class="@container">
+        <div class="relative w-full overflow-hidden bg-background-dark">
+          <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+            data-alt="Beautiful Venezuelan landscape with mountains and mist"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVjZV88bpPN3UNssJ4-XvqYGStRJ-igyAVNMrA7WoPTfNZmwJSMEyoiZ5hcPDqOFhh1FnQJBKDc9WBOn-Ejja0EOgHVATa2isIbvDVnvelaFUi4zh9oF5JgsCoiZ0ESPXAK8p6GFf5zeiyJXYHrZ5EFe7T3PqPQxeWWwuLEwHMexkWupdyYxgoArEVSjd-8xNjNteA8LxZQdIwdORgU18ASzYF2LH6NYWMYg17dVhDglAYoH9AANWHl-pUtFZ7ViM-Z1t_KH4Ssds");'>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/50 to-transparent">
+          </div>
+          <div
+            class="relative z-10 flex min-h-[400px] flex-col items-center justify-center gap-6 px-4 py-20 text-center @[480px]:gap-8">
+            <div class="flex flex-col gap-2 max-w-[800px]">
+              <div
+                class="inline-flex items-center justify-center gap-2 self-center rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-white ring-1 ring-inset ring-white/20 mb-4">
+                <span class="material-symbols-outlined text-primary text-[18px]">handshake</span>
+                <span>Alianzas Estratégicas</span>
+              </div>
+              <h1
+                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl lg:text-6xl drop-shadow-sm">
+                Nuestros Aliados Comerciales
+              </h1>
+              <h2 class="text-gray-200 text-base font-normal leading-relaxed @[480px]:text-lg max-w-2xl mx-auto mt-2">
+                En el Circuito de la Excelencia, trabajamos de la mano con las mejores empresas para garantizar una
+                experiencia inolvidable en cada rincón de Venezuela.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search and Filter Section -->
+      <section class="w-full bg-white dark:bg-background-dark border-b border-[#e5e7eb] dark:border-[#223326]">
+        <div class="px-4 md:px-10 lg:px-40 py-8">
+          <div class="max-w-[960px] mx-auto flex flex-col gap-6">
+            <!-- SearchBar -->
+            <div class="relative">
+              <label class="flex flex-col h-14 w-full">
+                <div
+                  class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm ring-1 ring-inset ring-gray-200 dark:ring-[#2a4535] focus-within:ring-2 focus-within:ring-primary transition-shadow bg-[#f9fafb] dark:bg-[#1a2e22]">
+                  <div class="text-gray-400 dark:text-gray-500 flex items-center justify-center pl-4 pr-2">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <input
+                    class="flex w-full min-w-0 flex-1 bg-transparent resize-none overflow-hidden rounded-xl text-[#111813] dark:text-white focus:outline-0 border-none h-full placeholder:text-gray-400 dark:placeholder:text-gray-500 px-2 text-base font-normal leading-normal"
+                    placeholder="Buscar socios por nombre, categoría o ubicación..." value="" />
+                </div>
+              </label>
+            </div>
+            <!-- Chips -->
+            <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide no-scrollbar">
+              <button
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#111813] dark:bg-primary text-white dark:text-[#111813] px-6 transition-transform active:scale-95 shadow-md">
+                <p class="text-sm font-bold leading-normal">Todos</p>
+              </button>
+              <button
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#1a2e22] hover:bg-gray-100 dark:hover:bg-[#253f30] border border-gray-200 dark:border-[#2a4535] px-6 transition-colors">
+                <span class="material-symbols-outlined text-sm">directions_bus</span>
+                <p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Transporte</p>
+              </button>
+              <button
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#1a2e22] hover:bg-gray-100 dark:hover:bg-[#253f30] border border-gray-200 dark:border-[#2a4535] px-6 transition-colors">
+                <span class="material-symbols-outlined text-sm">hiking</span>
+                <p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Turismo</p>
+              </button>
+              <button
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#1a2e22] hover:bg-gray-100 dark:hover:bg-[#253f30] border border-gray-200 dark:border-[#2a4535] px-6 transition-colors">
+                <span class="material-symbols-outlined text-sm">restaurant</span>
+                <p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Gastronomía</p>
+              </button>
+              <button
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#1a2e22] hover:bg-gray-100 dark:hover:bg-[#253f30] border border-gray-200 dark:border-[#2a4535] px-6 transition-colors">
+                <span class="material-symbols-outlined text-sm">design_services</span>
+                <p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Servicios</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners Grid -->
+      <section class="w-full py-10 px-4 md:px-10 lg:px-40">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2e22] border border-[#e5e7eb] dark:border-[#2a4535] hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="People hiking up a mountain trail"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeKYiyyaGIX_R7WKxm7lieJXds4hGo4WJqFRXrSnkaxTiyYRMDEF6nrYGLH2wZk2EhWFhut64nT-sMbNXhXSlAmHmwCVPXbrgmAT-aDly9S1xOmGznhS6nZt9ianikABxJvXANxZYyG6gzdnZL7UwSpu_AG6dubjMHMI_kOHt6OhizDemi21hPLFd7atVlV0H8ncVUujrmhXmQqctEf9CyuYuZf039cnUVOnNqy8B74FeUJgUmff9sWDnvOBnaGxCZvJ12OYyCH0o");'>
+                </div>
+                <div class="absolute top-3 right-3 rounded-full bg-white/90 dark:bg-black/70 p-1.5 shadow-sm">
+                  <span class="material-symbols-outlined text-primary text-sm">verified</span>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5 gap-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <span class="material-symbols-outlined text-[16px]">hiking</span>
+                      Turismo
+                    </div>
+                    <h3 class="text-xl font-bold text-[#111813] dark:text-white leading-tight">Turismo Aventura</h3>
+                  </div>
+                  <div
+                    class="size-10 shrink-0 rounded-lg bg-gray-50 flex items-center justify-center p-1 border border-gray-100">
+                    <!-- Logo placeholder -->
+                    <span class="material-symbols-outlined text-gray-400">landscape</span>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                  Expertos en logística de transporte y excursiones guiadas por los andes venezolanos. Ofrecemos
+                  paquetes completos para los amantes de la naturaleza.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a class="inline-flex items-center text-sm font-bold text-[#111813] dark:text-white hover:text-primary transition-colors gap-1 group/link"
+                    href="#">
+                    Visitar Sitio Web
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2e22] border border-[#e5e7eb] dark:border-[#2a4535] hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Modern van driving on a highway"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmK7-gskIXPKRFXTUl8ec-9sf-HxIsf0kspqy_AcI_bSDE5EpJhkUB8h8ogN2bYWe__8-ZeZpgF8MvD6sEXr_RI_WgOBuJp4OwvfybPu1LJO3wkoFRGCQ5SUknV_w5fcbu_3zRgxXWNxHO6j1voWQewX91NolvBuvm9333ONo74dxQfmYNVxPSLgxb4tvnq-SPDkDVFWJMmCMcJHhL6_-zFi_FItMn0PhgsVnSqPIdxB1Gn8UlsGaC-vRSsNNn5vjBDqaKSLqhhOI");'>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5 gap-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <span class="material-symbols-outlined text-[16px]">directions_bus</span>
+                      Transporte
+                    </div>
+                    <h3 class="text-xl font-bold text-[#111813] dark:text-white leading-tight">Transporte Seguro</h3>
+                  </div>
+                  <div
+                    class="size-10 shrink-0 rounded-lg bg-gray-50 flex items-center justify-center p-1 border border-gray-100">
+                    <span class="material-symbols-outlined text-gray-400">local_shipping</span>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                  Servicio de traslado privado y seguro a nivel nacional. Flota moderna con aire acondicionado y
+                  choferes certificados.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a class="inline-flex items-center text-sm font-bold text-[#111813] dark:text-white hover:text-primary transition-colors gap-1 group/link"
+                    href="#">
+                    Visitar Sitio Web
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2e22] border border-[#e5e7eb] dark:border-[#2a4535] hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Gourmet venezuelan food dish"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_VPyRRuw_mB1UHStrc0VTv3RVXztTjx5IyD1sgE9y9reTkyvtv0RKDMURgEldmOPuWYPbTvQneV_bWqqCqnExAvKKGAExE5HhYgkG4rIZ2n6Jxb03vQWx19x_K-qj-PgRajPP8IV1e0adcyNX4UkwXKfbXdt_0_KmrtDat-5ORU1P1hbHpd2KdcKD9ylShdViwbT_RiujYXZyEw0R71Q9EmlaC4eI5SQ9AYhPbB1Ve-sp33BcO9Z4xiIQA3piLc9X6nolq3UjALY");'>
+                </div>
+                <div class="absolute top-3 right-3 rounded-full bg-white/90 dark:bg-black/70 p-1.5 shadow-sm">
+                  <span class="material-symbols-outlined text-primary text-sm">verified</span>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5 gap-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <span class="material-symbols-outlined text-[16px]">restaurant</span>
+                      Gastronomía
+                    </div>
+                    <h3 class="text-xl font-bold text-[#111813] dark:text-white leading-tight">Sabores Andinos</h3>
+                  </div>
+                  <div
+                    class="size-10 shrink-0 rounded-lg bg-gray-50 flex items-center justify-center p-1 border border-gray-100">
+                    <span class="material-symbols-outlined text-gray-400">restaurant_menu</span>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                  Experiencias gastronómicas auténticas de la región. Degustaciones de quesos, café y platos típicos en
+                  ambientes exclusivos.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a class="inline-flex items-center text-sm font-bold text-[#111813] dark:text-white hover:text-primary transition-colors gap-1 group/link"
+                    href="#">
+                    Visitar Sitio Web
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2e22] border border-[#e5e7eb] dark:border-[#2a4535] hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Sunny beach with palm trees"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC96KXDpSOR1X9SYQB7BC5umN3B7HAkgVLCRIrAybZpOksqeU-rFDyyG0GkvrasKHsIM_JDD11Bz6GUVtP5XPHklwS6eO48U3vh9Qq-fwwNJ8TSPALxXy8CFWX-G_JfYGQtXCGGiBhe27KqDPhcFPj662-3itx0jSP70SqcAPMT0yVJwymM-Jgvyc4USJwe_UHoEuiGioXX5ohJ4bVn558_VOb76NbZDnYbRmPRV8wOZzUuUlY66rAaw3DDOtQMNCLacuEPK9WQ8O4");'>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5 gap-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <span class="material-symbols-outlined text-[16px]">travel_explore</span>
+                      Turismo
+                    </div>
+                    <h3 class="text-xl font-bold text-[#111813] dark:text-white leading-tight">Rutas del Sol</h3>
+                  </div>
+                  <div
+                    class="size-10 shrink-0 rounded-lg bg-gray-50 flex items-center justify-center p-1 border border-gray-100">
+                    <span class="material-symbols-outlined text-gray-400">sunny</span>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                  Operador turístico especializado en rutas costeras. Organizamos traslados y estadías en las mejores
+                  playas de Venezuela.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a class="inline-flex items-center text-sm font-bold text-[#111813] dark:text-white hover:text-primary transition-colors gap-1 group/link"
+                    href="#">
+                    Visitar Sitio Web
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2e22] border border-[#e5e7eb] dark:border-[#2a4535] hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Green lush forest landscape"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuJgHrd1c-qCWRnE07ZoAyK87fAZZjpfnFrE_rvdzeLB1C_xot_IROyz-bayJ0RYlMMpI1m6Hh8Xg8O9jjIVN-G1XEbY8eGgP49ZTI747q-fMlCze7m6K-8RhUe3ps1et4A7cemMOjAsrkUMEIL8hw9a2Xebwxu_QvLr8iD0oot4HoBvoyLouHiI65CKzLzgBud-JnYRW9rIogytTRCFC5qbB4m0mcwfVQHTRa-bOcs4ItAclB84Xn4dwdn3GuqIZXgwIa09MrcKM");'>
+                </div>
+                <div class="absolute top-3 right-3 rounded-full bg-white/90 dark:bg-black/70 p-1.5 shadow-sm">
+                  <span class="material-symbols-outlined text-primary text-sm">verified</span>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5 gap-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <span class="material-symbols-outlined text-[16px]">eco</span>
+                      Ecología
+                    </div>
+                    <h3 class="text-xl font-bold text-[#111813] dark:text-white leading-tight">EcoVenezuela</h3>
+                  </div>
+                  <div
+                    class="size-10 shrink-0 rounded-lg bg-gray-50 flex items-center justify-center p-1 border border-gray-100">
+                    <span class="material-symbols-outlined text-gray-400">forest</span>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                  Promoviendo el turismo ecológico y sustentable. Conectamos viajeros conscientes con destinos que
+                  preservan la naturaleza.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a class="inline-flex items-center text-sm font-bold text-[#111813] dark:text-white hover:text-primary transition-colors gap-1 group/link"
+                    href="#">
+                    Visitar Sitio Web
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2e22] border border-[#e5e7eb] dark:border-[#2a4535] hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div class="relative h-48 w-full overflow-hidden bg-gray-100">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Professional tour guide pointing at landscape"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4y_5lWhJNZQa-0nDTRHq1vo1ixvfF_4x82Dxwqr8wlzTgu_FPUJ4TYUsTzbihB5dbbWSSIiec3hK46TdtUq6-i4AkTFEJ2QoEWUbrBChqlcXoS84DzKk3CynmlrzpV64PIKlza73YI509G1rZVseVwSQh4gNZHjEyVRu-SbFIQEHF-wK3jIwU6_qviJNKVlN3KndDysvoUPQjZtp-XBalaClO8C_6y5scfDobiUCqvD4-zNqBI0GbLsNjCBmHV9GgGeIboAewFus");'>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5 gap-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <span class="material-symbols-outlined text-[16px]">school</span>
+                      Servicios
+                    </div>
+                    <h3 class="text-xl font-bold text-[#111813] dark:text-white leading-tight">Guías Expertos</h3>
+                  </div>
+                  <div
+                    class="size-10 shrink-0 rounded-lg bg-gray-50 flex items-center justify-center p-1 border border-gray-100">
+                    <span class="material-symbols-outlined text-gray-400">groups</span>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                  Red de guías certificados bilingües. Asegura que tus huéspedes tengan la mejor información cultural e
+                  histórica.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a class="inline-flex items-center text-sm font-bold text-[#111813] dark:text-white hover:text-primary transition-colors gap-1 group/link"
+                    href="#">
+                    Visitar Sitio Web
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-16 px-4">
+        <div class="bg-background-dark rounded-3xl overflow-hidden max-w-[960px] mx-auto relative isolate">
+          <div class="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
+            data-alt="Abstract green geometric pattern"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1QV3a-bofsxSd_JE8LVYNXbz5UItsmni_sTqhR0yAnrq6BIAuCxORCpgDZcpQiikgsuviVJLDv2h1n2wWEGPB9H5-nFs4flkahK1H4si7yi7rLfjOFWqTaIjfwA9R55lEeoq44IzVSzYpUoowqSbeqQCZc7Z4-KY29ZSr24FeYnbtO1AJ3MakU1w5SsCNlJNwH5y34dVYVtdOB9XW-6NV2ptfkSXyhch2e1oeLuSxHkFJR3kNeG75YQmJ3O75EZNQQW_qFLJXePc");'>
+          </div>
+          <div class="relative z-10 flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8">
+            <div class="flex flex-col gap-3 text-center md:text-left">
+              <h2 class="text-3xl font-bold text-white tracking-tight">¿Quieres ser nuestro socio?</h2>
+              <p class="text-gray-300 max-w-md">Únete a nuestra red de excelencia y expande tu alcance en el mercado
+                turístico venezolano.</p>
+            </div>
+            <button
+              class="flex shrink-0 min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-[#111813] text-base font-bold transition-transform hover:scale-105 hover:bg-green-400 shadow-lg shadow-green-900/20">
+              Contáctanos hoy
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="material-symbols-outlined text-secondary">stars</span>
+              <span class="font-bold text-lg">Circuito de la Excelencia</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">Promoviendo el turismo de calidad y la hospitalidad
+              venezolana a través de nuestra red de posadas certificadas.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Explorar</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a class="hover:text-secondary transition-colors" href="#">Destinos</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Posadas</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Experiencias</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a class="hover:text-secondary transition-colors" href="#">Términos y Condiciones</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Política de Privacidad</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Contacto</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">mail</span>
+                contacto@circuitoexcelencia.com
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">call</span>
+                +58 212 123 4567
+              </li>
+            </ul>
+            <div class="flex gap-4 mt-4">
+              <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+                href="#"><span class="material-symbols-outlined text-[18px]">public</span></a>
+              <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+                href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+          <p>© 2023 Circuito de la Excelencia. Todos los derechos reservados.</p>
+          <div class="flex items-center gap-2 mt-4 md:mt-0">
+            <span>Hecho con</span>
+            <span class="material-symbols-outlined text-red-500 text-[14px]">favorite</span>
+            <span>en Venezuela</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

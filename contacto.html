@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contacto - Circuito de la Excelencia</title>
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Theme Configuration -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#181834",
+            "secondary": "#c9a446",
+            "background-light": "#f6f8f6",
+            "background-dark": "#101216",
+            "text-main": "#111813",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    /* Custom styles to ensure brand colors work with system theme */
+    .text-brand-blue {
+      color: #181834;
+    }
+
+    .bg-brand-blue {
+      background-color: #181834;
+    }
+
+    .text-brand-gold {
+      color: #c9a446;
+    }
+
+    .border-brand-gold {
+      border-color: #c9a446;
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-[#111813] dark:text-white">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <!-- Top Navigation -->
+    <header
+      class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+      <div class="flex items-center justify-between px-6 py-4 lg:px-20 max-w-[1400px] mx-auto">
+        <div class="flex items-center gap-4">
+          <div class="size-16">
+            <img src="img/logo-circuito.webp" alt="Logo" class="w-full h-full object-contain">
+          </div>
+          <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Circuito de la
+            Excelencia</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-9">
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/posadas.html">Posadas</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/about.html">Nosotros</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/blog.html">Blog</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="md:hidden text-text-main dark:text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="relative w-full bg-brand-blue py-16 lg:py-24">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center"
+          data-alt="scenic venezuelan landscape with mountains and mist"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfHNIEWcADaVGv5yHcuxXDToUgf_BNjNGBWicji6CmxDLLgDuD0bT5k-Tnx8QjpX3RKpbSDDNCOlmrq0t0c24BHdesNzPw6REWxVKqzhu47oOEjluCpqcLMKyccNohr8yI6GIluSexRWt3MLENQHLx7NLu4Agsi4ydxAi3MVxD0G3AgI-SETEjHh_rLOdelnzRhmNfOeYXTDMG-9M_4mkyeNKbZDLQe2fByoEYLSp-lm2wwyTcS4OmRS6bEZGqeBtxkaBll2tcG5w');">
+        </div>
+        <div class="layout-container relative z-10 flex flex-col items-center justify-center text-center px-4">
+          <span class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4">Estamos aquí para ti</span>
+          <h1 class="text-white text-4xl lg:text-5xl font-black leading-tight tracking-[-0.033em] max-w-2xl mb-6">
+            Contáctanos
+          </h1>
+          <p class="text-gray-200 text-lg max-w-2xl">
+            ¿Tienes alguna pregunta sobre nuestras posadas o destinos? Nuestro equipo está listo para ayudarte a
+            planificar tu experiencia perfecta en Venezuela.
+          </p>
+        </div>
+      </section>
+      <!-- Contact Split Section -->
+      <section class="px-4 py-12 lg:px-40 lg:py-20">
+        <div class="mx-auto max-w-[1200px] flex flex-col lg:flex-row gap-12 lg:gap-20">
+          <!-- Left Column: Form -->
+          <div class="flex-1">
+            <div class="mb-8">
+              <h2 class="text-brand-blue dark:text-white text-3xl font-bold mb-2">Envíanos un mensaje</h2>
+              <p class="text-gray-500 dark:text-gray-400">Completa el formulario y te responderemos a la brevedad
+                posible.</p>
+            </div>
+            <form class="flex flex-col gap-6">
+              <div class="flex flex-col md:flex-row gap-6">
+                <label class="flex flex-col flex-1">
+                  <span class="text-brand-blue dark:text-gray-200 text-sm font-bold mb-2">Nombre Completo</span>
+                  <div class="relative">
+                    <input
+                      class="w-full rounded-lg border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] px-4 py-3 text-base outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all"
+                      placeholder="Ej. Juan Pérez" type="text" />
+                    <span class="material-symbols-outlined absolute right-4 top-3.5 text-gray-400 text-xl">person</span>
+                  </div>
+                </label>
+                <label class="flex flex-col flex-1">
+                  <span class="text-brand-blue dark:text-gray-200 text-sm font-bold mb-2">Correo Electrónico</span>
+                  <div class="relative">
+                    <input
+                      class="w-full rounded-lg border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] px-4 py-3 text-base outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all"
+                      placeholder="Ej. juan@correo.com" type="email" />
+                    <span class="material-symbols-outlined absolute right-4 top-3.5 text-gray-400 text-xl">mail</span>
+                  </div>
+                </label>
+              </div>
+              <div class="flex flex-col md:flex-row gap-6">
+                <label class="flex flex-col flex-1">
+                  <span class="text-brand-blue dark:text-gray-200 text-sm font-bold mb-2">Teléfono</span>
+                  <div class="relative">
+                    <input
+                      class="w-full rounded-lg border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] px-4 py-3 text-base outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all"
+                      placeholder="+58 ..." type="tel" />
+                    <span class="material-symbols-outlined absolute right-4 top-3.5 text-gray-400 text-xl">call</span>
+                  </div>
+                </label>
+                <label class="flex flex-col flex-1">
+                  <span class="text-brand-blue dark:text-gray-200 text-sm font-bold mb-2">Asunto</span>
+                  <div class="relative">
+                    <select
+                      class="w-full rounded-lg border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] px-4 py-3 text-base outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all appearance-none text-gray-500">
+                      <option>Información General</option>
+                      <option>Reservas</option>
+                      <option>Eventos Corporativos</option>
+                      <option>Sugerencias</option>
+                    </select>
+                    <span
+                      class="material-symbols-outlined absolute right-4 top-3.5 text-gray-400 text-xl pointer-events-none">expand_more</span>
+                  </div>
+                </label>
+              </div>
+              <label class="flex flex-col">
+                <span class="text-brand-blue dark:text-gray-200 text-sm font-bold mb-2">Mensaje</span>
+                <textarea
+                  class="w-full min-h-[140px] rounded-lg border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] px-4 py-3 text-base outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all resize-none"
+                  placeholder="¿En qué podemos ayudarte?"></textarea>
+              </label>
+              <button
+                class="mt-2 w-full md:w-auto self-start rounded-lg bg-primary hover:bg-[#0fd650] text-[#111813] px-8 py-3.5 text-base font-bold shadow-sm transition-all flex items-center justify-center gap-2 group"
+                type="button">
+                <span>Enviar Mensaje</span>
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">send</span>
+              </button>
+            </form>
+          </div>
+          <!-- Right Column: Info & Map -->
+          <div class="lg:w-[400px] flex flex-col gap-8">
+            <!-- Contact Info Card -->
+            <div class="bg-brand-blue rounded-2xl p-8 text-white relative overflow-hidden">
+              <!-- Decorative Circle -->
+              <div class="absolute -top-10 -right-10 w-32 h-32 bg-brand-gold rounded-full opacity-20 blur-2xl"></div>
+              <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined text-brand-gold">contacts</span>
+                Información de Contacto
+              </h3>
+              <div class="flex flex-col gap-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-primary">location_on</span>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-300 mb-1">Dirección Principal</p>
+                    <p class="font-medium">Av. Principal de Las Mercedes, Caracas, Venezuela.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-primary">phone_in_talk</span>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-300 mb-1">Teléfonos</p>
+                    <p class="font-medium">+58 212 999 9999</p>
+                    <p class="font-medium text-gray-400 text-sm mt-1">+58 414 123 4567 (WhatsApp)</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-primary">mail</span>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-300 mb-1">Correo Electrónico</p>
+                    <p class="font-medium">info@circuitodelaexcelencia.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-8 border-t border-white/10">
+                <p class="text-sm text-gray-300 mb-4">Síguenos en redes sociales:</p>
+                <div class="flex gap-4">
+                  <a class="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/20 flex items-center justify-center transition-colors text-white"
+                    href="#">
+                    <!-- Using a generic globe icon to represent web/social as requested no SVG textures -->
+                    <span class="material-symbols-outlined">public</span>
+                  </a>
+                  <a class="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/20 flex items-center justify-center transition-colors text-white"
+                    href="#">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                  </a>
+                  <a class="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/20 flex items-center justify-center transition-colors text-white"
+                    href="#">
+                    <span class="material-symbols-outlined">smart_display</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Mini Map Card -->
+            <div
+              class="bg-white dark:bg-[#1c2e24] rounded-2xl p-2 border border-[#dbe6df] dark:border-[#2a3c30] h-[240px] shadow-sm relative group overflow-hidden">
+              <div class="w-full h-full bg-gray-200 rounded-xl overflow-hidden relative" data-location="Venezuela"
+                style="https://lh3.googleusercontent.com/aida-public/AB6AXuDDVWG_YNnd-oPcPxFTV21XDtDzT78dIqmGxFMEyCjtaNu14ljLAxualUDPO4tICykeV0l33dabpNWcdToMC2FT8Lj5umHYzDB0f_6ZFqnoKOknFc9e1DZaYD7FuFL6xbAe5L2EC6B7PNQYf7Z_KW3CqoF4u2GYD8-VTewq_CNsLtI34iSA8z2qwO5Mw5K76ievRPdsR6M3r5QbO08kTCGbI_X5IsyrEO27B0OM3RvZTLf9bLKXa6AQeHqvSCB0tnjpA-X-oBKy61k">
+                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  data-alt="Map view of Venezuela region showing inns locations"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc4fgyU8bQjUJq7vt82T-u_c8EyAMkX8-9GhM1wNQhrf06QrvC_t_dRi8pmwtc-b3F70TbYv3pssp_n4rWDBrmDTeC52GqTiBb5xv6_BJVKeQewuLwanm8ylpgvWGYLIFd_tPOlEab20unrdNCjsMt09fhuXwAbj48qz_jS_87r509WkYHKqAlkn0v-XrLrK0f8rV_0ab4XHpIxSNynHVPyfbOTxCbzqo_xIu7owAQAqbXEeMIvAoPqopFSmH5H02Nb2FMop80r_w" />
+                <div
+                  class="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-transparent transition-all">
+                  <button
+                    class="bg-white text-brand-blue px-4 py-2 rounded-lg text-sm font-bold shadow-lg flex items-center gap-2 hover:bg-primary transition-colors">
+                    <span class="material-symbols-outlined text-lg">map</span>
+                    Ver Mapa Completo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Teaser Section -->
+      <section class="bg-white dark:bg-[#181834] py-16 border-t border-[#f0f4f2] dark:border-[#2a3c30]">
+        <div class="layout-container flex flex-col items-center px-4 lg:px-40">
+          <h2 class="text-brand-blue dark:text-white text-2xl lg:text-3xl font-bold mb-8 text-center">Preguntas
+            Frecuentes</h2>
+          <div class="w-full max-w-[800px] grid gap-4">
+            <details class="group bg-background-light dark:bg-[#1c2e24] p-4 rounded-xl cursor-pointer">
+              <summary class="flex justify-between items-center font-bold text-brand-blue dark:text-white list-none">
+                <span>¿Cómo puedo realizar una reserva?</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+              </summary>
+              <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm leading-relaxed">
+                Puedes reservar directamente a través de nuestra página web haciendo clic en el botón "Reservar" o
+                contactando directamente a la posada de tu interés a través de los números proporcionados.
+              </p>
+            </details>
+            <details class="group bg-background-light dark:bg-[#1c2e24] p-4 rounded-xl cursor-pointer">
+              <summary class="flex justify-between items-center font-bold text-brand-blue dark:text-white list-none">
+                <span>¿Cuáles son los métodos de pago aceptados?</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+              </summary>
+              <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm leading-relaxed">
+                Aceptamos transferencias bancarias nacionales e internacionales, Zelle, y tarjetas de crédito/débito en
+                la mayoría de nuestras posadas afiliadas.
+              </p>
+            </details>
+            <details class="group bg-background-light dark:bg-[#1c2e24] p-4 rounded-xl cursor-pointer">
+              <summary class="flex justify-between items-center font-bold text-brand-blue dark:text-white list-none">
+                <span>¿Ofrecen transporte desde el aeropuerto?</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+              </summary>
+              <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm leading-relaxed">
+                Sí, muchas de nuestras posadas ofrecen servicio de traslado. Por favor indícalo en el campo "Asunto" o
+                "Mensaje" al contactarnos.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="material-symbols-outlined text-secondary">stars</span>
+              <span class="font-bold text-lg">Circuito de la Excelencia</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">Promoviendo el turismo de calidad y la hospitalidad
+              venezolana a través de nuestra red de posadas certificadas.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Explorar</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a class="hover:text-secondary transition-colors" href="#">Destinos</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Posadas</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Experiencias</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a class="hover:text-secondary transition-colors" href="#">Términos y Condiciones</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Política de Privacidad</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Contacto</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">mail</span>
+                contacto@circuitoexcelencia.com
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">call</span>
+                +58 212 123 4567
+              </li>
+            </ul>
+            <div class="flex gap-4 mt-4">
+              <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+                href="#"><span class="material-symbols-outlined text-[18px]">public</span></a>
+              <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+                href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+          <p>© 2023 Circuito de la Excelencia. Todos los derechos reservados.</p>
+          <div class="flex items-center gap-2 mt-4 md:mt-0">
+            <span>Hecho con</span>
+            <span class="material-symbols-outlined text-red-500 text-[14px]">favorite</span>
+            <span>en Venezuela</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Circuito de la Excelencia - Posadas Venezolanas</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#181834",
+            "secondary": "#c9a446",
+            "background-light": "#f6f8f6",
+            "background-dark": "#101216",
+            "text-main": "#111813",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"],
+            "body": ["Noto Sans", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-gray-100 font-display antialiased">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <header
+      class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+      <div class="flex items-center justify-between px-6 py-4 lg:px-20 max-w-[1400px] mx-auto">
+        <div class="flex items-center gap-4">
+          <div class="size-16">
+            <img src="img/logo-circuito.webp" alt="Logo" class="w-full h-full object-contain">
+          </div>
+          <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Circuito de la
+            Excelencia</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-9">
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/posadas.html">Posadas</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/about.html">Nosotros</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/blog.html">Blog</a>
+          <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+            href="/contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="md:hidden text-text-main dark:text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1 flex flex-col items-center w-full">
+      <div class="w-full max-w-[1400px] px-4 md:px-6 py-6 @container">
+        <div
+          class="relative overflow-hidden rounded-2xl flex flex-col items-center justify-center text-center min-h-[500px] md:min-h-[600px] bg-cover bg-center p-8 gap-8"
+          data-alt="Impresionante vista aérea de los tepuyes venezolanos al amanecer"
+          style='background-image: linear-gradient(rgba(24, 24, 52, 0.3) 0%, rgba(24, 24, 52, 0.7) 100%), url("/img/roraima.png");'>
+          <div class="max-w-3xl flex flex-col gap-4 animate-fade-in-up">
+            <h1 class="text-white text-4xl font-black leading-tight tracking-tight md:text-6xl drop-shadow-lg">
+              Vive lo Mejor de Venezuela
+            </h1>
+            <h2 class="text-white/90 text-lg font-medium leading-relaxed md:text-xl max-w-2xl mx-auto drop-shadow-md">
+              Descubre el Circuito de la Excelencia – una colección curada de las mejores posadas y hoteles boutique en
+              paisajes impresionantes.
+            </h2>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+            <button
+              class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-secondary hover:bg-[#e0b852] transition-all text-[#181834] text-base font-bold shadow-lg shadow-black/20">
+              Explorar Destinos
+            </button>
+            <button
+              class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 transition-all text-white text-base font-bold">
+              Ver Mapa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full max-w-[960px] px-4 py-16 flex flex-col gap-10">
+        <div class="flex flex-col gap-4 text-center items-center">
+          <h2 class="text-text-main dark:text-white text-3xl md:text-4xl font-bold leading-tight">
+            El Circuito de la Excelencia
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-2xl">
+            Más que una estadía. Representamos un estándar de oro en calidad, cálida hospitalidad y auténtica cultura
+            venezolana.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 text-secondary dark:text-secondary">
+              <span class="material-symbols-outlined text-[28px]">verified</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-text-main dark:text-white text-lg font-bold">Calidad Certificada</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Estándares rigurosos que garantizan las mejores comodidades, limpieza y confort para cada huésped.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 text-secondary dark:text-secondary">
+              <span class="material-symbols-outlined text-[28px]">handshake</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-text-main dark:text-white text-lg font-bold">Hospitalidad Auténtica</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Atención personalizada de anfitriones que te tratan como familia, compartiendo secretos y tradiciones
+                locales.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 text-secondary dark:text-secondary">
+              <span class="material-symbols-outlined text-[28px]">location_on</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-text-main dark:text-white text-lg font-bold">Ubicaciones Únicas</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Posadas ubicadas en los lugares más impresionantes de Venezuela, desde los Andes hasta la costa
+                caribeña.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full bg-white dark:bg-gray-900 py-16 w-full flex justify-center border-t border-gray-100 dark:border-gray-800">
+        <div class="max-w-[1200px] w-full px-4 md:px-6 flex flex-col gap-10">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end gap-4 pb-4 border-b border-gray-100 dark:border-gray-800">
+            <div>
+              <h2 class="text-text-main dark:text-white text-3xl md:text-4xl font-bold mt-2">Posadas Fundadoras</h2>
+            </div>
+            <a class="text-text-main dark:text-gray-300 font-semibold flex items-center gap-1 hover:text-secondary transition-colors"
+              href="#">
+              Ver todos los destinos <span class="material-symbols-outlined text-lg">arrow_forward</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group flex flex-col gap-4 cursor-pointer">
+              <div class="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Turquoise waters and white sand beach in Los Roques"
+                  style='background-image: url("/img/solar.png");'>
+                </div>
+                <div
+                  class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+                  Los Roques
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-start">
+                  <h3
+                    class="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+                    El Solar de la Luna</h3>
+                  <div class="flex items-center gap-1 text-secondary text-sm font-bold">
+                    <span class="material-symbols-outlined text-sm">star</span> 4.9
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Refugio paradisíaco con excursiones privadas en
+                  barco.</p>
+                <p class="text-text-main dark:text-gray-300 font-semibold mt-2">Desde <span
+                    class="text-secondary">$150</span> / noche</p>
+              </div>
+            </div>
+            <div class="group flex flex-col gap-4 cursor-pointer">
+              <div class="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Colonial style courtyard with mountains in the background in Merida"
+                  style='background-image: url("/img/granja.png");'>
+                </div>
+                <div
+                  class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+                  Mérida
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-start">
+                  <h3
+                    class="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+                    Granja Momentos</h3>
+                  <div class="flex items-center gap-1 text-secondary text-sm font-bold">
+                    <span class="material-symbols-outlined text-sm">star</span> 4.8
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Lodge de montaña rodeado por los picos andinos.</p>
+                <p class="text-text-main dark:text-gray-300 font-semibold mt-2">Desde <span
+                    class="text-secondary">$80</span> / noche</p>
+              </div>
+            </div>
+            <div class="group flex flex-col gap-4 cursor-pointer">
+              <div class="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Tropical rainforest setting with colorful colonial architecture in Choroni"
+                  style='background-image: url("/img/encanto.png");'>
+                </div>
+                <div
+                  class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+                  Choroní
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-start">
+                  <h3
+                    class="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+                    El Encanto</h3>
+                  <div class="flex items-center gap-1 text-secondary text-sm font-bold">
+                    <span class="material-symbols-outlined text-sm">star</span> 4.7
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Hacienda histórica de cacao cerca de la costa.</p>
+                <p class="text-text-main dark:text-gray-300 font-semibold mt-2">Desde <span
+                    class="text-secondary">$100</span> / noche</p>
+              </div>
+            </div>
+
+            <div class="group flex flex-col gap-4 cursor-pointer">
+              <div class="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Tropical rainforest setting with colorful colonial architecture in Choroni"
+                  style='background-image: url("/img/granja.png");'>
+                </div>
+                <div
+                  class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+                  Choroní
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-start">
+                  <h3
+                    class="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+                    Posada La Huérfana</h3>
+                  <div class="flex items-center gap-1 text-secondary text-sm font-bold">
+                    <span class="material-symbols-outlined text-sm">star</span> 4.7
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Hacienda histórica de cacao cerca de la costa.</p>
+                <p class="text-text-main dark:text-gray-300 font-semibold mt-2">Desde <span
+                    class="text-secondary">$100</span> /
+                  noche</p>
+              </div>
+            </div>
+
+            <div class="group flex flex-col gap-4 cursor-pointer">
+              <div class="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Tropical rainforest setting with colorful colonial architecture in Choroni"
+                  style='background-image: url("/img/encanto.png");'>
+                </div>
+                <div
+                  class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+                  Choroní
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-start">
+                  <h3
+                    class="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+                    Piedemonte</h3>
+                  <div class="flex items-center gap-1 text-secondary text-sm font-bold">
+                    <span class="material-symbols-outlined text-sm">star</span> 4.7
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Hacienda histórica de cacao cerca de la costa.</p>
+                <p class="text-text-main dark:text-gray-300 font-semibold mt-2">Desde <span
+                    class="text-secondary">$100</span> /
+                  noche</p>
+              </div>
+            </div>
+
+            <div class="group flex flex-col gap-4 cursor-pointer">
+              <div class="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Tropical rainforest setting with colorful colonial architecture in Choroni"
+                  style='background-image: url("/img/solar.png");'>
+                </div>
+                <div
+                  class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+                  Choroní
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-start">
+                  <h3
+                    class="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+                    Ventisquero</h3>
+                  <div class="flex items-center gap-1 text-secondary text-sm font-bold">
+                    <span class="material-symbols-outlined text-sm">star</span> 4.7
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Hacienda histórica de cacao cerca de la costa.</p>
+                <p class="text-text-main dark:text-gray-300 font-semibold mt-2">Desde <span
+                    class="text-secondary">$100</span> /
+                  noche</p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="w-full max-w-[1400px] px-4 md:px-6 py-16">
+        <div
+          class="relative overflow-hidden rounded-2xl bg-primary flex flex-col items-center justify-center text-center p-8 md:p-16 gap-6 min-h-[400px]"
+          data-alt="Stylized dark map background representing travel routes" data-location="Venezuela"
+          style='background-image: linear-gradient(rgba(24, 24, 52, 0.4) 0%, rgba(24, 24, 52, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkwXJupHPBIjbfhtQz5Ifc_CQlK07_lrhzYABDP1OUzP5DihHlZiTvZH0elUFTUm33JDln80RNGSNSinpQ2OlmgpWwbIM_zYX7wVKPk5aJ2jZ5L7X8dU9zw5lwF7SamVIEhATqOP6MoQy__OS05a3C-TWUSvNPQH3dDGvgjPyocy-o_X8r_da702wHpR16a-nDHnslB5m3d14kzCDsJXmzXWavesbr0rvNVLH05dDm7Wmk7d4c7n4eq2v_ptz2w1hsnywczlch-nU"); background-size: cover; background-position: center;'>
+          <h2 class="text-white text-3xl md:text-4xl font-bold max-w-2xl">
+            Planifica Tu Viaje por Venezuela
+          </h2>
+          <p class="text-gray-300 text-lg max-w-xl">
+            Explora nuestro mapa interactivo para encontrar la posada perfecta para tu próxima aventura.
+          </p>
+          <button
+            class="bg-secondary hover:bg-[#e0b852] text-[#181834] font-bold py-3 px-8 rounded-lg transition-colors flex items-center gap-2">
+            <span class="material-symbols-outlined">map</span> Abrir Mapa
+          </button>
+        </div>
+      </div>
+      <div class="w-full bg-background-light dark:bg-background-dark py-16 flex justify-center">
+        <div class="max-w-[1200px] w-full px-4 md:px-6 flex flex-col gap-12">
+          <div class="text-center">
+            <h2 class="text-text-main dark:text-white text-3xl font-bold mb-4">Experiencias de Huéspedes</h2>
+            <p class="text-gray-600 dark:text-gray-400">Escucha a los viajeros que han descubierto la magia.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm">
+              <div class="flex gap-1 text-secondary mb-4">
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 italic mb-6">"La atención al detalle en Posada La Cigala fue
+                increíble. La mejor manera de ver Los Roques."</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 overflow-hidden"
+                  data-alt="Portrait of a smiling woman"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIG9j8DYTJZQKPfyfMvA5XaMCDKDOjKqhZc1dYVoP1gNWBU7KaFSdkZ5Ke5kF2GBMZvDCENKIlofajvR777GEDZZGXj5EU0AczlduQKSz4-FC3pMXTJCcJtcAksa6IPiP3XsCrFy0g1HWH9KTz1sQ6uJZNd_iQF2ekrGChD2PebnCZX57F06ENRKiT72Y7XumN_qjuvXfVfZHgVY-KyngM67FNMgIPGNn3gJU7D4CBm7kt2-KwaJamud2HRvRvb5vQel1SWeqlqa0"); background-size: cover;'>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">Elena R.</p>
+                  <p class="text-xs text-gray-500">De España</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm">
+              <div class="flex gap-1 text-secondary mb-4">
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 italic mb-6">"Servicio verdaderamente excelente. El Circuito
+                garantiza calidad dondequiera que vayas en Venezuela."</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 overflow-hidden"
+                  data-alt="Portrait of a man with glasses"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBryUE5QicMCg2-PtU0Xns7TcRTWtJDkC83WK5M0gdsORcbejiKbnn8Lc-V44qYFGz58tGrjvwYfaM-iOa4ROgb2xCDerGpaAWVkiSDcICoR5UMmWrrnkr9Ltzrv8CVqb73GkAuBfnlSsqc3jh_OaxkZGrpvQTHPzTQ42ZTqKa_5RHug-Zb7H9BpL7ISxXR6iAMWdDCE5nRdlEImukjAgaqCdT8bOf03qwwgBkD778cqteBj1GN8bzLf3NNrj4cxAbcCmGv7cyOxBM"); background-size: cover;'>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">Carlos M.</p>
+                  <p class="text-xs text-gray-500">De Argentina</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm hidden lg:block">
+              <div class="flex gap-1 text-secondary mb-4">
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+                <span class="material-symbols-outlined text-sm">star</span>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 italic mb-6">"Hacienda El Cafetal fue un sueño. La historia y
+                la naturaleza se combinaron perfectamente."</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 overflow-hidden"
+                  data-alt="Portrait of a young woman hiking"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg"); background-size: cover;'>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">Sarah J.</p>
+                  <p class="text-xs text-gray-500">De EEUU</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="material-symbols-outlined text-secondary">stars</span>
+              <span class="font-bold text-lg">Circuito de la Excelencia</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">Promoviendo el turismo de calidad y la hospitalidad
+              venezolana a través de nuestra red de posadas certificadas.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Explorar</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a class="hover:text-secondary transition-colors" href="#">Destinos</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Posadas</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Experiencias</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a class="hover:text-secondary transition-colors" href="#">Términos y Condiciones</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Política de Privacidad</a></li>
+              <li><a class="hover:text-secondary transition-colors" href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-4">Contacto</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">mail</span>
+                contacto@circuitoexcelencia.com
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">call</span>
+                +58 212 123 4567
+              </li>
+            </ul>
+            <div class="flex gap-4 mt-4">
+              <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+                href="#"><span class="material-symbols-outlined text-[18px]">public</span></a>
+              <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+                href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+          <p>© 2023 Circuito de la Excelencia. Todos los derechos reservados.</p>
+          <div class="flex items-center gap-2 mt-4 md:mt-0">
+            <span>Hecho con</span>
+            <span class="material-symbols-outlined text-red-500 text-[14px]">favorite</span>
+            <span>en Venezuela</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

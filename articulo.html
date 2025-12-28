@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Artículo del Blog - Circuito de la Excelencia</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Theme Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#181834",
+            "secondary": "#c9a446",
+            "background-light": "#ffffff",
+            "background-dark": "#15151d",
+            "surface-light": "#f8f9fa",
+            "surface-dark": "#1f1f2e",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark font-display text-[#131316] dark:text-gray-100 flex flex-col min-h-screen">
+  <header
+    class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="flex items-center justify-between px-6 py-4 lg:px-20 max-w-[1400px] mx-auto">
+      <div class="flex items-center gap-4">
+        <div class="size-16">
+          <img src="img/logo-circuito.webp" alt="Logo" class="w-full h-full object-contain">
+        </div>
+        <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Circuito de la
+          Excelencia</h2>
+      </div>
+      <nav class="hidden md:flex items-center gap-9">
+        <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+          href="/posadas.html">Posadas</a>
+        <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+          href="/about.html">Nosotros</a>
+        <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+          href="/blog.html">Blog</a>
+        <a class="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+          href="/contacto.html">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <button class="md:hidden text-text-main dark:text-white">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content Wrapper -->
+  <main class="flex-grow">
+    <!-- Blog Header Section -->
+    <section class="relative w-full pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-[960px] mx-auto flex flex-col items-center text-center">
+        <!-- Tag -->
+        <div class="mb-6">
+          <span
+            class="bg-secondary/10 text-secondary px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider">
+            Destinos
+          </span>
+        </div>
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary dark:text-white leading-[1.15] mb-6">
+          Descubriendo los Andes: Un viaje inolvidable por Mérida
+        </h1>
+        <!-- Meta Info -->
+        <div class="flex items-center justify-center gap-6 text-gray-500 dark:text-gray-400 text-sm md:text-base">
+          <div class="flex items-center gap-2">
+            <img alt="María Gonzalez" class="w-8 h-8 rounded-full object-cover border border-gray-200"
+              data-alt="portrait of author maria"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhrNq2LN9_TeIEbsmLRLbk1ZWK4tLhWvxVZANNknWEUerIv5gA6Jg0EaXB2_t9bhL49WNpmrI2si4-EN-ESrEXhJjkSANXVMaGvCEKvNJjlsjn_7l597BCYk1JraxM8T3ZJ4x5Qyhb0HTHXj7RfGRnctRy1PSHiJoKu4zGA_inFoNNPqG2iWjrKZZX6WgITQNQbe0O5kQnoaFUqZIznktitvDXn4sNhEHRjKDZQjca6hLGP9HlbrOyreZGZ5O7Puh8dGP9CwoSPqQ" />
+            <span class="font-medium text-gray-900 dark:text-white">Por María Gonzalez</span>
+          </div>
+          <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+            <span>12 de Octubre, 2023</span>
+          </div>
+          <span class="w-1 h-1 rounded-full bg-gray-300 hidden sm:block"></span>
+          <div class="flex items-center gap-1.5 hidden sm:flex">
+            <span class="material-symbols-outlined text-[18px]">schedule</span>
+            <span>5 min de lectura</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Image -->
+    <div class="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      <div class="relative w-full aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden shadow-xl">
+        <img class="w-full h-full object-cover" data-alt="landscape view of misty andean mountains"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWXWIvCV4TDuH4BqNVcZPDwEMujFPw2tjQalycMO3agGWg7r95AbcSnvEO1wabcw-VMtQqMZ_nAjZhVQ21vQizBDEbuFa_jAHnyotJbn7ieJfFygM7Ar61ghktZ2NkiBmm3RoK7k-6IYm3bFW4kx1vty1ZQOWwGrs_Q6lKcPLUrbKf-IPofTpyWAcM5pfN7vgT1AMmue0GUV0F8tXOfkTF-xI0OelYqRSIlHbjOywaKR85qA-RJlTlwOZapNjw8gSvGlXns1JQKlY" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+          <p class="text-white text-xs md:text-sm font-medium opacity-90 text-right">Vista de la Sierra Nevada desde el
+            teleférico</p>
+        </div>
+      </div>
+    </div>
+    <!-- Content Layout -->
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-20">
+      <!-- Sidebar / Share (Left) -->
+      <div class="hidden lg:block lg:col-span-2">
+        <div class="sticky top-28 flex flex-col gap-4 items-end pr-4 border-r border-gray-100 dark:border-gray-800">
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Compartir</p>
+          <button
+            class="p-3 rounded-full bg-surface-light dark:bg-surface-dark hover:bg-blue-50 dark:hover:bg-blue-900/30 text-gray-600 dark:text-gray-300 hover:text-[#1877F2] transition-colors group">
+            <span class="material-symbols-outlined text-[24px]">share</span>
+          </button>
+          <button
+            class="p-3 rounded-full bg-surface-light dark:bg-surface-dark hover:bg-sky-50 dark:hover:bg-sky-900/30 text-gray-600 dark:text-gray-300 hover:text-[#1DA1F2] transition-colors">
+            <span class="material-symbols-outlined text-[24px]">post_add</span>
+          </button>
+          <button
+            class="p-3 rounded-full bg-surface-light dark:bg-surface-dark hover:bg-green-50 dark:hover:bg-green-900/30 text-gray-600 dark:text-gray-300 hover:text-[#25D366] transition-colors">
+            <span class="material-symbols-outlined text-[24px]">chat</span>
+          </button>
+          <button
+            class="p-3 rounded-full bg-surface-light dark:bg-surface-dark hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-gray-900 transition-colors">
+            <span class="material-symbols-outlined text-[24px]">link</span>
+          </button>
+        </div>
+      </div>
+      <!-- Article Body (Center) -->
+      <article
+        class="lg:col-span-7 prose prose-lg prose-slate dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">
+        <p class="lead text-xl text-gray-500 font-medium mb-8">
+          Venezuela es un país de contrastes, donde cada rincón esconde una maravilla natural esperando ser descubierta.
+          Pero pocos lugares tienen la magia mística de los Andes.
+        </p>
+        <p class="mb-6">
+          Mérida, la ciudad de los caballeros, no es solo un destino turístico; es un estado mental. Desde el momento en
+          que el aire fresco de la montaña toca tu rostro, sabes que estás en un lugar especial. Durante mi última
+          visita, tuve el privilegio de recorrer parte del circuito de posadas que hacen de esta región un ejemplo de
+          hospitalidad.
+        </p>
+        <h2 class="text-2xl md:text-3xl font-bold text-primary dark:text-white mt-10 mb-6 flex items-center gap-3">
+          <span class="w-1.5 h-8 bg-secondary rounded-full block"></span>
+          La experiencia de la hospitalidad andina
+        </h2>
+        <p class="mb-6">
+          Lo que distingue al <strong>Circuito de la Excelencia</strong> no son solo sus instalaciones de primera
+          categoría, sino la calidez de su gente. En cada posada, los anfitriones te reciben no como a un cliente, sino
+          como a un viejo amigo que regresa a casa.
+        </p>
+        <div
+          class="my-10 p-8 bg-surface-light dark:bg-surface-dark rounded-xl border-l-4 border-secondary relative overflow-hidden">
+          <span
+            class="material-symbols-outlined absolute top-4 right-4 text-6xl text-gray-200 dark:text-gray-700 opacity-20 rotate-180">format_quote</span>
+          <p class="text-lg italic text-primary dark:text-gray-200 font-medium relative z-10">
+            "No hay nada como despertar con el aroma de un café recién colado, arepas andinas calientes y la vista
+            imponente de la Sierra Nevada cubierta de nieve. Es un momento que detiene el tiempo."
+          </p>
+        </div>
+        <p class="mb-6">
+          Entre las paradas obligatorias, visitamos la <em>Laguna de Mucubají</em>, un espejo de agua glaciar que
+          refleja el cielo azul profundo de los Andes. El silencio allí es absoluto, solo roto por el suave viento que
+          baja del páramo.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+          <figure class="rounded-lg overflow-hidden">
+            <img class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+              data-alt="foggy mountain forest path"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb2yJoN_FNcFw9Rb7UxCwVaymL2csMAfGCQBr7CwJAzotJo4jYsWoo4WMfiK3Q0GdnfZX90193L2y1FgcbHW2J5uzvl-lzhA5xCts26MLDbyQ_TxkOaVQ7n6RgHtzd-hWDwcXu05qF7XuAiS378_xsuuXAP-f3vDGmV3spEAOmV_q2Yz4xQlsOgZ2Xzy3iifPWaqP3gwgjH7DJmeJNxqUqCfNwg6d2o7_zMMkPmw9LbCIk8d8e6zbA3fjtNr6WfRRXgzDscHoYlK0" />
+            <figcaption class="text-xs text-gray-500 mt-2 text-center">Senderos en el bosque nublado</figcaption>
+          </figure>
+          <figure class="rounded-lg overflow-hidden">
+            <img class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+              data-alt="traditional food arepas and cheese"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjPjE565z5C3GoD8Oc15vc-Das_YKYmbmAJMO_BhBLIzVGZCn_2nOHx9e9gDdRGcivcm4NMz6vNzUiPpVYDylOg9OIlfs1hcg2GZK9ytaVJ-T0Vkkndhiyk_9I7WjjYZeBfBaX-SO7Vrg-hUAmP6mVJApszlQVwas3PtrIYymSO7Dcpp2ss9hZB4OVHvvkqxbxo1QXvc80FrzW4VcUKuPj8A905DYg-7P1ko2smzKpLAn5B_ohwLpQtU06Etb0SocDM5p772hXgwA" />
+            <figcaption class="text-xs text-gray-500 mt-2 text-center">Gastronomía local: Pisca Andina</figcaption>
+          </figure>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-primary dark:text-white mt-8 mb-4">Recomendaciones para el viajero
+        </h3>
+        <ul class="list-none space-y-3 mb-8 pl-0">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Ropa abrigada:</strong> Las noches pueden bajar hasta los 5°C.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Efectivo:</strong> Aunque muchos lugares aceptan tarjetas, es bueno llevar efectivo para
+              artesanías locales.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Cámara:</strong> Los paisajes son simplemente irrepetibles.</span>
+          </li>
+        </ul>
+        <p class="mb-8">
+          Mérida te espera con los brazos abiertos. Si buscas desconexión, paz y una inmersión cultural profunda, este
+          es tu destino ideal para las próximas vacaciones.
+        </p>
+        <!-- Tags Footer -->
+        <div class="flex flex-wrap gap-2 pt-6 border-t border-gray-100 dark:border-gray-800">
+          <a class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            href="#">#Mérida</a>
+          <a class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            href="#">#TurismoNacional</a>
+          <a class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            href="#">#Montaña</a>
+          <a class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            href="#">#Posadas</a>
+        </div>
+      </article>
+      <!-- Sidebar (Right) -->
+      <aside class="hidden lg:block lg:col-span-3 space-y-8">
+        <!-- Promo Card 
+        <div class="bg-primary rounded-xl p-6 text-white shadow-lg relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-2xl -mr-16 -mt-16"></div>
+          <h3 class="text-xl font-bold mb-3 relative z-10">¿Planeando tu visita a Mérida?</h3>
+          <p class="text-gray-300 text-sm mb-6 relative z-10">Reserva tu estadía en las mejores posadas certificadas del
+            país.</p>
+          <button
+            class="w-full py-3 bg-secondary hover:bg-[#b08d35] text-white font-bold rounded-lg transition-colors shadow-md relative z-10 flex items-center justify-center gap-2">
+            <span>Ver Posadas</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </button>
+        </div> -->
+        <!-- Newsletter -->
+        <div class="bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-xl p-6">
+          <div class="flex items-center gap-2 mb-4 text-primary dark:text-white">
+            <span class="material-symbols-outlined text-secondary">mail</span>
+            <h3 class="font-bold">Boletín Semanal</h3>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Recibe las mejores ofertas y guías de viaje
+            directamente en tu correo.</p>
+          <form class="space-y-3">
+            <input
+              class="w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-secondary/50"
+              placeholder="Tu correo electrónico" type="email" />
+            <button
+              class="w-full py-2.5 bg-primary hover:bg-[#202045] text-white text-sm font-bold rounded-lg transition-colors"
+              type="button">
+              Suscribirse
+            </button>
+          </form>
+        </div>
+      </aside>
+    </div>
+    <!-- Related Posts Section -->
+    <section class="bg-surface-light dark:bg-surface-dark py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-bold text-primary dark:text-white">Artículos Relacionados</h2>
+          <a class="text-secondary font-semibold text-sm hover:underline flex items-center gap-1" href="#">
+            Ver todo el blog
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <a class="group flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"
+            href="#">
+            <div class="relative h-48 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="beach resort pool with palm trees"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI7cUXHCewTgcpiwvtVOuFizdBwxEHJ8N6DXZ5ck_kGJ_ITA5F8LXTqxwJhoBpwa0lwLe9pC1GSxtFRyaCRGxQUEVPccNrNvBXTtwxRiMweFHil8iBcVELRV_lwWgmsvb6AC_k76ouDMuhiPmPDRQW-hi2h8KNROlgojM-qG79PEOIsQ34I3ba4LSB3MzivVLTBsQGHBznaZJPtPou1LMvQYwXW6th0BpxX2_TPPdOkKgi5_28h7L8nsJBAyaTQuMuoH62C8DsuoQ" />
+              <div
+                class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 px-2 py-1 rounded text-xs font-bold text-primary dark:text-white backdrop-blur-sm">
+                Playa
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="text-xs text-gray-400 mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                28 Sept, 2023
+              </div>
+              <h3
+                class="text-lg font-bold text-primary dark:text-white mb-2 group-hover:text-secondary transition-colors">
+                Maravillas de Morrocoy</h3>
+              <p class="text-gray-500 text-sm line-clamp-2 mb-4">Descubre los cayos más cristalinos del parque nacional
+                y dónde hospedarte.</p>
+              <span class="text-secondary text-sm font-semibold mt-auto">Leer más</span>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a class="group flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"
+            href="#">
+            <div class="relative h-48 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="colonial town street with colorful houses"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIMEjM1Ilnc75w2Cd4SomMcZopzrqv1ML3fzNIhnme_kGc-AOPDNVUc2b0uYj2k6aRobjkR7OdDeDEUaYXI4DCsguRPmGyh8IbDbZK9iQ2aLi5g2jS7HeF2P_MxjRQrsdRZn0saIWGCvFOiMgDxRrsuIVWI6jwU0mT6Lr-VWRY1VX1woxQXrFmFtwYB-Rx8inlsmsEwaNvvFmKPoOGI2t_Z60-90iMt0TZUmXyvmXUWBTjUKzDKTe2KUsPhsSg140kCGLB6uTM3xU" />
+              <div
+                class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 px-2 py-1 rounded text-xs font-bold text-primary dark:text-white backdrop-blur-sm">
+                Cultura
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="text-xs text-gray-400 mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                15 Sept, 2023
+              </div>
+              <h3
+                class="text-lg font-bold text-primary dark:text-white mb-2 group-hover:text-secondary transition-colors">
+                Coro: Patrimonio Histórico</h3>
+              <p class="text-gray-500 text-sm line-clamp-2 mb-4">Un paseo por los médanos y las calles empedradas llenas
+                de historia.</p>
+              <span class="text-secondary text-sm font-semibold mt-auto">Leer más</span>
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a class="group flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"
+            href="#">
+            <div class="relative h-48 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="green savanna landscape with tepuy in background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8xOYZStwabFfFEjxlSnpJVsgsfzPLoZRhZLQwak7-47d54u0gg15JOeSFYVlJ-_QPZnzogrTKM7TbcVg09ni0nXlDB0fS_AT8nu2CSrzIT_tM6B-3VFRk993nswxvL60CL1RVLTWv7fbHJCvxPP84wxX_lx4gPKKrjsUWYDh4m8ZMx3UmlaD8wd7piytkPUpXOOYJc7wCuXJUjc36gaYnuiMMjLNGGp7S491yPRKTRgQQ2TA2zKDh5QCcOddTfI9lRnLzp90PjEM" />
+              <div
+                class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 px-2 py-1 rounded text-xs font-bold text-primary dark:text-white backdrop-blur-sm">
+                Aventura
+              </div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="text-xs text-gray-400 mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                02 Ago, 2023
+              </div>
+              <h3
+                class="text-lg font-bold text-primary dark:text-white mb-2 group-hover:text-secondary transition-colors">
+                La Gran Sabana en 4x4</h3>
+              <p class="text-gray-500 text-sm line-clamp-2 mb-4">Guía completa para preparar tu viaje a la tierra de los
+                tepuyes.</p>
+              <span class="text-secondary text-sm font-semibold mt-auto">Leer más</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+    <div class="max-w-[1280px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="col-span-1 md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="material-symbols-outlined text-secondary">stars</span>
+            <span class="font-bold text-lg">Circuito de la Excelencia</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">Promoviendo el turismo de calidad y la hospitalidad
+            venezolana a través de nuestra red de posadas certificadas.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Explorar</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a class="hover:text-secondary transition-colors" href="#">Destinos</a></li>
+            <li><a class="hover:text-secondary transition-colors" href="#">Posadas</a></li>
+            <li><a class="hover:text-secondary transition-colors" href="#">Experiencias</a></li>
+            <li><a class="hover:text-secondary transition-colors" href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Legal</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a class="hover:text-secondary transition-colors" href="#">Términos y Condiciones</a></li>
+            <li><a class="hover:text-secondary transition-colors" href="#">Política de Privacidad</a></li>
+            <li><a class="hover:text-secondary transition-colors" href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Contacto</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">mail</span>
+              contacto@circuitoexcelencia.com
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">call</span>
+              +58 212 123 4567
+            </li>
+          </ul>
+          <div class="flex gap-4 mt-4">
+            <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+              href="#"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
+              href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>© 2023 Circuito de la Excelencia. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-2 mt-4 md:mt-0">
+          <span>Hecho con</span>
+          <span class="material-symbols-outlined text-red-500 text-[14px]">favorite</span>
+          <span>en Venezuela</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
